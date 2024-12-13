@@ -2,7 +2,7 @@ import { useState } from 'react'
 import Button from "./Button";
 import style from "../style/Button.module.css"
 
-function Card({ title, description, image, id, badge }) {
+function Card({ title, description, image, id, tags }) {
 
     const [pippo, setPippo] = useState(false);
     function toggleActive() {
@@ -24,7 +24,7 @@ function Card({ title, description, image, id, badge }) {
                 <div className="card-body">
                     <h5 className="card-title">{title}</h5>
                     <p className="card-text"><b>{description}</b></p>
-                    <div>{badge}</div>
+                    <div>{tags}</div>
                     <div>{numero}</div>
                     <Button />
                     <button onClick={increment} >Incrementa</button>
