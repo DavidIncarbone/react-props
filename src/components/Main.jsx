@@ -7,7 +7,7 @@ function Main() {
         <main>
             <ul>
                 {posts.map(post => (
-                    <Card title={post.titolo} description={post.descrizione} image={post.immagine} key={post.id} />
+                    <Card title={post.title} description={post.content} image={post.image} key={post.id} />
                 ))}
             </ul>
         </main>
