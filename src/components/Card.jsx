@@ -14,8 +14,8 @@ function Card({ title, description, image, id, tags }) {
     }
 
     const [numero, setNumero] = useState(0);
-    function increment() {
-
+    function increment(event) {
+        event.stopPropagation()
         setNumero(numero + 100)
     }
     return (
