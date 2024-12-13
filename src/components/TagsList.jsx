@@ -11,32 +11,18 @@ for (let i = 0; i < myTags.length; i++) {
     }
 }
 console.log(filteredTags)
-// const singleTag = myTags.map((tag) => filteredTags.indexOf(tag) === -1 && filteredTags.push(tag))
-
 
 function TagsList() {
 
     return (
-        <div className="border w-25">
+        <div className="w-25">
             <h2>Lista dei Tags</h2>
             {filteredTags.map((tag) => {
-
                 return <li className="list-unstyled">{tag}</li>
             })}
-
         </div>
     )
-
-
 }
-
-
-
-
-
-
-
-
 export default TagsList
 
 // if (array.indexOf(value) === -1) array.push(value);
