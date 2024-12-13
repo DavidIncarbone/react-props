@@ -3,7 +3,7 @@ const posts = [
     {
         id: 1,
         title: "Post 1",
-        image: 'https://placehold.co/600x400',
+        image: 'https://picsum.photos/200/202',
         content:
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit animi unde quasi enim non esse ratione voluptas voluptate, officiis veritatis magni blanditiis possimus nobis cum id inventore corporis deserunt hic.",
         tags: ["html", "css"],
@@ -12,7 +12,7 @@ const posts = [
     {
         id: 2,
         title: "Post 2",
-        image: 'https://placehold.co/600x400',
+        image: 'https://picsum.photos/200/203',
         content:
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit animi unde quasi enim non esse ratione voluptas voluptate, officiis veritatis magni blanditiis possimus nobis cum id inventore corporis deserunt hic.",
         tags: ["js", "css"],
@@ -21,7 +21,7 @@ const posts = [
     {
         id: 3,
         title: "Post 3",
-        image: 'https://placehold.co/600x400',
+        image: 'https://picsum.photos/id/237/200/201',
         content:
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit animi unde quasi enim non esse ratione voluptas voluptate, officiis veritatis magni blanditiis possimus nobis cum id inventore corporis deserunt hic.",
         tags: ["js", "php"],
@@ -30,7 +30,7 @@ const posts = [
     {
         id: 4,
         title: "Post 4",
-        image: 'https://placehold.co/600x400',
+        image: 'https://picsum.photos/200/201',
         content:
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit animi unde quasi enim non esse ratione voluptas voluptate, officiis veritatis magni blanditiis possimus nobis cum id inventore corporis deserunt hic.",
         tags: ["html"],

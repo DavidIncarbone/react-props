@@ -19,6 +19,7 @@ function Card({ title, description, image, id, tags }) {
         setNumero(numero + 100)
     }
     return (
+
         <li key={id} className="list-unstyled">
             <div className={`card container mb-5 ${borderRed ? style.isActive : ""}`} onClick={toggleActive} style={{
                 width: 30 + "rem"
@@ -36,12 +37,13 @@ function Card({ title, description, image, id, tags }) {
                         )
                     })}
 
-                    <div>Counter: {numero}</div>
+                    <div className="pb-2">Counter: {numero}</div>
                     <Button />
-                    <button onClick={increment} >Incrementa</button>
+                    <button className="bg-primary text-white" onClick={increment} >Incrementa</button>
                 </div>
             </div>
         </li>
+
     )
 }
 

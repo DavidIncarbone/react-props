@@ -16,10 +16,10 @@ function TagsList() {
 
     return (
         <div className="w-25">
-            <h2>Lista dei Tags</h2>
+            <h2 className="ps-1">Lista dei Tags</h2>
             <ul>
                 {filteredTags.map((tag) => {
-                    return <li className="list-unstyled">{tag}</li>
+                    return <li>{tag}</li>
                 })}
             </ul>
         </div>
