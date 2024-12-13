@@ -1,6 +1,5 @@
 import { useState } from 'react'
 import Button from "./Button";
-import posts from "../data/posts"
 import style from "../style/Button.module.css"
 import tagsStyle from "../style/Tags.module.css"
 
@@ -30,14 +29,14 @@ function Card({ title, description, image, id, tags }) {
                     <p className="card-text"><b>{description}</b></p>
 
                     {tags.map((tag) => {
-                        return (tag === "html" && <span key={id} className={tagsStyle.green} >{tag}</span> ||
-                            tag === "css" && <span key={id} className={tagsStyle.pink}>{tag}</span> ||
-                            tag === "js" && <span key={id} className={tagsStyle.yellow}>{tag}</span> ||
-                            tag === "php" && <span key={id} className={tagsStyle.red}>{tag}</span>
+                        return (tag === "html" && <span key={"html"} className={tagsStyle.green} >{tag}</span> ||
+                            tag === "css" && <span key={"css"} className={tagsStyle.pink}>{tag}</span> ||
+                            tag === "js" && <span key={"js"} className={tagsStyle.yellow}>{tag}</span> ||
+                            tag === "php" && <span key={"php"} className={tagsStyle.red}>{tag}</span>
                         )
                     })}
 
-                    <div>{numero}</div>
+                    <div>Counter: {numero}</div>
                     <Button />
                     <button onClick={increment} >Incrementa</button>
                 </div>
