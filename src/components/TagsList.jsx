@@ -17,9 +17,11 @@ function TagsList() {
     return (
         <div className="w-25">
             <h2>Lista dei Tags</h2>
-            {filteredTags.map((tag) => {
-                return <li className="list-unstyled">{tag}</li>
-            })}
+            <ul>
+                {filteredTags.map((tag) => {
+                    return <li className="list-unstyled">{tag}</li>
+                })}
+            </ul>
         </div>
     )
 }

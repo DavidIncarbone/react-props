@@ -8,9 +8,9 @@ import tagsStyle from "../style/Tags.module.css"
 
 function Card({ title, description, image, id, tags }) {
 
-    const [pippo, setPippo] = useState(false);
+    const [borderRed, setBorderRed] = useState(false);
     function toggleActive() {
-        setPippo(!pippo)
+        setBorderRed(!borderRed)
     }
 
     const [numero, setNumero] = useState(0);
@@ -20,7 +20,7 @@ function Card({ title, description, image, id, tags }) {
     }
     return (
         <li key={id} className="list-unstyled">
-            <div className={`card container mb-5 ${pippo ? style.isActive : ""}`} onClick={toggleActive} style={{
+            <div className={`card container mb-5 ${borderRed ? style.isActive : ""}`} onClick={toggleActive} style={{
                 width: 30 + "rem"
             }}>
                 <img className="card-img-top" src={image} alt="Card image cap" />

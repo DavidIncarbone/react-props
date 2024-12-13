@@ -7,9 +7,9 @@ function Main() {
 
     return (
         <main>
-            <ul>
-                <TagsList />
-            </ul>
+
+            <TagsList />
+
             <ul>
                 {posts.map(post => (
                     post.published === true &&
